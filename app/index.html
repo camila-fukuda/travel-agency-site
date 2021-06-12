@@ -55,12 +55,19 @@
         Ever since, we&rsquo;ve been working to make travel <strong>better for everyone.</strong></h3>
 
       <div class="wrapper wrapper--medium">
-        <img src="assets/images/first-trip.jpg" alt="Couple walking down a street.">
+        <img sizes="(min-width: 970px) 976px, 100vw"
+          srcset="assets/images/first-trip-low-res-i.jpg 565w, assets/images/first-trip-i.jpg 976w, assets/images/first-trip-hi-dpi-i.jpg 1952w"
+          alt="Couple walking down a street.">
       </div>
 
       <div class="our-start flex-container">
         <div class="our-start__img">
-          <img src="assets/images/our-start.jpg" alt="Our founder, Jane Doe">
+          <picture>
+            <source sizes="404px" srcset="assets/images/our-start.jpg 404w, assets/images/our-start-hi-dpi.jpg 808w"
+              media="(min-width: 800px)">
+            <img src="assets/images/our-start-landscape.jpg" alt="Our founder, Jane Doe" srcset="">
+          </picture>
+
         </div>
         <div class="our-start__txt">
           <h2 class="headline our-start__txt-title">Here&rsquo;s how we got started&hellip;</h2>
