@@ -1,0 +1,17 @@
+.flex-container {
+
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+
+    @mixin atMedium {
+        flex-direction: row;
+    }
+
+    @mixin atLarge {
+        flex-direction: row;
+    }
+
+}
