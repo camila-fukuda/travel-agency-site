@@ -1,41 +1,60 @@
 .our-start {
 
-    background-color: red;
 
     &__img {
         flex: 100%;
-
-        margin: auto;
+        margin-bottom: 20px;
 
         @mixin atMedium {
             flex: 33%;
-            padding-right: 65px;
+            padding-right: 7%;
+            margin: auto;
+
         }
 
         @mixin atLarge {
             flex: 33%;
-            padding-right: 65px;
+            padding-right: 7%;
+            margin: auto;
         }
 
     }
 
     &__txt-title {
         text-align: left;
+        margin-top: 0
     }
 
     &__txt {
         flex: 100%;
-        margin: 0 auto;
         text-align: justify;
 
+
+
         @mixin atMedium {
-            flex: 50%;
+            flex: 60%;
         }
 
         @mixin atLarge {
-            flex: 50%;
+            flex: 60%;
         }
 
+
+
+    }
+
+    p {
+        line-height: 1.8;
+        margin: 1.8rem 0;
+
+        @mixin atSmall {
+            font-size: 1.125rem;
+            ;
+        }
+    }
+
+    p a {
+        font-weight: 800;
     }
 
 
