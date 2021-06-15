@@ -1,6 +1,7 @@
 .page-section {
   padding: 1.2rem 0;
 
+
   @mixin atMedium {
     padding: 4.5rem 0;
   }
@@ -14,5 +15,16 @@
     background-image: url('/assets/images/testimonials-bg.jpg');
     background-size: cover;
     background-position: top center;
+  }
+
+  &--footer {
+    padding: 50px;
+    text-align: center;
+
+    p {
+      margin: 0;
+      line-height: 2rem;
+    }
+
   }
 }

@@ -1,11 +1,11 @@
 .testimonials-itens {
     margin-top: 120px;
-    margin-bottom: -120px;
+    margin-bottom: -100px;
     display: grid;
     grid-template-columns: 1fr;
 
 
-    @mixin atMedium {
+    @mixin atLarge {
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 6rem
     }
@@ -42,12 +42,28 @@
         position: relative;
         top: -80px;
         margin-bottom: -80px;
-        border: solid 6px red;
+        border: solid 6px white;
     }
 
     h3 {
         font-size: 1.5rem;
         color: $mainBlue;
         margin: 10px 0 0 0;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        color: $mainOrange;
+    }
+
+    p {
+        line-height: 1.8;
+        margin: 1.8rem 0;
+        text-align: justify;
+
+        @mixin atSmall {
+            font-size: 1.125rem;
+            ;
+        }
     }
 }
