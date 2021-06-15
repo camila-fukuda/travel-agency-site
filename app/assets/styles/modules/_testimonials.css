@@ -1,0 +1,53 @@
+.testimonials-itens {
+    margin-top: 120px;
+    margin-bottom: -120px;
+    display: grid;
+    grid-template-columns: 1fr;
+
+
+    @mixin atMedium {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 6rem
+    }
+}
+
+
+
+.testimonials-title {
+    text-align: center;
+
+    h2 {
+        font-size: 3rem;
+        color: $mainBlue;
+        font-weight: 300;
+    }
+
+    strong {
+        font-weight: 500;
+    }
+
+    img {
+        width: 50px;
+    }
+}
+
+.testimonials-item {
+    background-color: rgba(255, 255, 255, .7);
+    padding: 0 1.8rem 1px 1.8rem;
+    text-align: center;
+    margin-bottom: 150px;
+
+    img {
+        border-radius: 50%;
+        position: relative;
+        top: -80px;
+        margin-bottom: -80px;
+        border: solid 6px red;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        color: $mainBlue;
+        margin: 10px 0 0 0;
+    }
+}
