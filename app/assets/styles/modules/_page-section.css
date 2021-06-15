@@ -26,5 +26,14 @@
       line-height: 2rem;
     }
 
+    a {
+      display: block;
+      margin: 10px auto;
+      width: 150px;
+      padding: 5px 0;
+
+
+    }
+
   }
 }
